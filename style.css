@@ -39,3 +39,71 @@ body{
     background-color: #4CE0D7;
     
 }
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sectionone{
+    margin-top: 133px;
+   
+}
+
+
+
+.sectionone{
+    display: flex;
+    flex-direction: column;
+    width: 1272px;
+    height: 559px;
+    margin-top: 133px auto;
+    margin-left: 84px;
+    margin-right: 84px;
+    background: url(./assets/background.png);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+
+.ventusfashion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 218px;
+    padding-bottom: 141px;
+    
+}
+
+.ventusfashion h3{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 23%;
+    margin-bottom: 22px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.ventusfashion h1{
+    font-size: 46px;
+    font-family: 400;
+    margin-bottom: 19px;
+    color: #FFFFFF;
+}
+
+.ventusfashion p{
+    font-size: 20px;
+    font-family: 400;
+    margin-bottom: 19px;
+    color: #FFFFFF;
+}
+
+
+.ventusfashion h1 span {
+    background: linear-gradient(90deg, #4CE0D7, #8BA9F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
