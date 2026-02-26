@@ -113,3 +113,95 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/* Topics Section Code*/
+
+.topics-section {
+    margin-top: 73px; 
+    padding: 0 83px;   
+    font-family: 'Inter', sans-serif;
+}
+
+.topics-title {
+    font-size: 24px;              
+    font-weight: 700;             
+    margin-bottom: 40px;          
+    display: inline-block;        
+    transition: all 0.3s ease;    
+    cursor: default;
+    margin-bottom: 48px;
+}
+
+
+.topics-title:hover {
+    color: #70C1B3;              
+    transform: translateX(5px);   
+    letter-spacing: 1px;          
+}
+
+.topics-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.topic-card {
+    width: 204px;
+    height: 291px;
+    background: #FFFFFF;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.05);
+    } 
+
+
+.topic-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #70C1B3; 
+}
+
+.view-more-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #5aa89d; 
+    transform: scale(1.05); 
+}
+
+.topic-name {
+    font-weight: 600;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.view-more-btn {
+    background-color: #70C1B3; 
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    
+   
+.view-more-btn:hover {
+    background-color: #5aa89d;
+}
+
+.topics-divider {
+    width: 1267px;             
+    height: 1px;               
+    background-color: #BCBCBC; 
+    border: none;
+    margin: 87.5px 87.5px 32.5px 85.5px;
+}
