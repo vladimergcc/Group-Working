@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
+}   
+ /* ცსს დეფაულტი */
 
 body{
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* ჰედერის გასტილვა და ჰოვერ-ღილაკები */
 .header {
     display: flex;
     align-items: center;
@@ -40,6 +43,8 @@ body{
     
 }
 
+
+/* კონტეინერი სემატიკური თეგისთვის */
 .containerr{
     max-width: 1440px;
     width: 100%;
@@ -48,7 +53,7 @@ body{
 
 
    
-
+/* პირველი ბეჰრაუნდის გასილვა და ჰოერები */
 .sectionone{
     display: flex;
     justify-content: center;
@@ -80,7 +85,7 @@ body{
     color: #FFFF;
 }
 
-
+/* ბეგრაუნდში არსებული ტექსტების სტილები h3 h1 p */
 .ventusfashion h3{
     font-size: 12px;
     font-weight: 700;
@@ -242,7 +247,7 @@ body{
   overflow: hidden;
 }
 
-/* იმგ გასტილვა და ზომები */
+/* იმგ გასტილვა და ზომები ვერტიკალურად დალაგებული სამი ქარდის*/
 .blogs-image {
   position: relative;
   width: 45%;
@@ -336,7 +341,7 @@ body{
 }
 
 
-/* ჰოვერები ღილაკებზე */
+/* ჰოვერები ღილაკებზე ვერტიკალურად დალაგებული სამი ქარდის*/
 
 .blogs-card {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
