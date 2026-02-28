@@ -45,7 +45,7 @@ body{
 
 
 /* კონტეინერი სემატიკური თეგისთვის */
-.containerr{
+.container{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -54,68 +54,47 @@ body{
 
    
 /* პირველი ბეჰრაუნდის გასილვა და ჰოერები */
-.sectionone{
-    display: flex;
-    justify-content: center;
-    margin-top: 133px;
-    padding-bottom: 75px;
-
+.intro {
+  padding: 0px 84px;
 }
 
-.fashion-image{
-    width: 1272px;
-    height: 559px;
-    background: url(./assets/Mask\ group\ \(7\).png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    position: relative;
-    color: #FFFFFF;
-    transition: 0.3s;
-    transform: scale(1.05);
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-radius: 16px;
+  background: url(./assets/Mask\ group\ \(7\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 218px 0px 141px 57px;
 }
 
-
-
-.ventusfashion{
-    position: absolute;
-    left: 60px;
-    top: 220px;
-    color: #FFFF;
+.intro-text h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  color: white;
 }
 
-/* ბეგრაუნდში არსებული ტექსტების სტილები h3 h1 p */
-.ventusfashion h3{
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.23em;
-    margin-bottom: 22px;
-
+.intro-text h1 {
+  font-size: 46px;
+  font-weight: 400;
+  color: white;
 }
 
-
-.ventusfashion h1 {
-    font-size: 46px;
-    font-weight: 400;
-    line-height: 100%;
-    margin-bottom: 19px;
-    max-width: 627px;
-
+.intro-text span {
+  font-weight: 700;
+  background: linear-gradient(90deg, #4ce0d7 43.06%, #8ba9f4 100%);
+  background-clip: text;
+  color: transparent;
 }
 
-.ventusfashion p{
-    font-size: 20px;
-    font-family: 400;
-    line-height: 1.6;
-    max-width: 494px;
-    color: #FFFFFF;
-}
-
-.ventusfashion h1 span {
-    background: linear-gradient(90deg, #4CE0D7, #8BA9F4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.intro-text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  max-width: 500px;
 }
 
 
