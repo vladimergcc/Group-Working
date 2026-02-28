@@ -45,7 +45,7 @@ body{
 
 
 /* კონტეინერი სემატიკური თეგისთვის */
-.containerr{
+.container{
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -54,68 +54,47 @@ body{
 
    
 /* პირველი ბეჰრაუნდის გასილვა და ჰოერები */
-.sectionone{
-    display: flex;
-    justify-content: center;
-    margin-top: 133px;
-    padding-bottom: 75px;
-
+.intro {
+  padding: 0px 84px;
 }
 
-.fashion-image{
-    width: 1272px;
-    height: 559px;
-    background: url(./assets/Mask\ group\ \(7\).png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    position: relative;
-    color: #FFFFFF;
-    transition: 0.3s;
-    transform: scale(1.05);
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-radius: 16px;
+  background: url(./assets/Mask\ group\ \(7\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 218px 0px 141px 57px;
 }
 
-
-
-.ventusfashion{
-    position: absolute;
-    left: 60px;
-    top: 220px;
-    color: #FFFF;
+.intro-text h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+  color: white;
 }
 
-/* ბეგრაუნდში არსებული ტექსტების სტილები h3 h1 p */
-.ventusfashion h3{
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.23em;
-    margin-bottom: 22px;
-
+.intro-text h1 {
+  font-size: 46px;
+  font-weight: 400;
+  color: white;
 }
 
-
-.ventusfashion h1 {
-    font-size: 46px;
-    font-weight: 400;
-    line-height: 100%;
-    margin-bottom: 19px;
-    max-width: 627px;
-
+.intro-text span {
+  font-weight: 700;
+  background: linear-gradient(90deg, #4ce0d7 43.06%, #8ba9f4 100%);
+  background-clip: text;
+  color: transparent;
 }
 
-.ventusfashion p{
-    font-size: 20px;
-    font-family: 400;
-    line-height: 1.6;
-    max-width: 494px;
-    color: #FFFFFF;
-}
-
-.ventusfashion h1 span {
-    background: linear-gradient(90deg, #4CE0D7, #8BA9F4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.intro-text p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  max-width: 500px;
 }
 
 
@@ -685,90 +664,91 @@ body{
 
 /* ფუთერის გასტილვა და ჰოვერები */
 
-
-footer {
-  max-width: 1440px;
-  height: 308px;
-  margin: 80px auto 0;
-  padding: 28px 60px 20px;
-  background-color: #ffffff;
-  border-radius: 40px;
-  box-shadow: 6px 0 6px rgba(0, 0, 0, 0.05);
-  font-family: "Poppins", sans-serif;
+.footer-wrapper {
+    /* background: #f5f5f5;   */
+    padding-bottom: 40px;
 }
 
-/* ზედა ნაწილი */
+/* ფუთერი */
+.footer {
+    max-width: 1440px;
+    margin: 80px auto 0;
+    padding: 28px 60px 20px;
+    background-color: #ffffff;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10), 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-family: "Poppins", sans-serif;
+}
+
+
 .footer-logoo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 120px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 120px;
 }
 
 /* ლოგო */
-.logo img {
-  height: 28px;
-  object-fit: contain;
-
+.footer .logo img {
+    height: 28px;
+    object-fit: contain;
 }
 
-/* სოციალური აიკონები */
+
 .footer-social {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer-social p {
-  margin: 0;
-  font-size: 26px;
-  font-weight: 700;
-  color:  #262626;
+    font-size: 26px;
+    font-weight: 700;
+    color: #262626;
+    margin: 0;
 }
 
-/* აიქონების კონტეინერი */
+/* აიქონები */
 .iconebisocial {
-  display: flex;
-  gap: 12px;
+    display: flex;
+    gap: 12px;
 }
 
 
 .iconebisocial a {
-  display: block;
+    display: block;
 }
 
-/* აიქონები */
+
 .iconebisocial img {
-  width: 31px;
-  height: 31px;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+    width: 31px;
+    height: 31px;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .iconebisocial img:hover {
-  transform: translateY(-2px);
-  opacity: 0.85;
+    transform: translateY(-2px);
+    opacity: 0.85;
 }
 
-/* გამყოფი ხაზი */
+
+
 
 .footer hr {
-  margin: 0 0 12px;
-  border: none;
-  height: 1px;
-  background-color: #BCBCBC;
+    margin: 0 60px 12px;
+    height: 1px;
+    border: none;
+    background-color: #BCBCBC;
 }
-/* ქვედა ტექსტი */
+
 
 .footer-bottom {
-  margin-top: 0;
-  font-size: 14px;
-  font-weight: 700;
-  color: #262626;
+    font-size: 14px;
+    font-weight: 700;
+    color: #262626;
 }
-
 
 
 /* ==========================================================
