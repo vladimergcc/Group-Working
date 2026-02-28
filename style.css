@@ -770,3 +770,180 @@ footer {
 }
 
 
+
+/* ==========================================================
+   1. საერთო რესპონსივი
+   ========================================================== */
+   @media (max-width: 1300px) {
+    .header, .containerr, .topics-section, .featured-post, 
+    .trending-section, .blogs-card, footer {
+        max-width: 95% !important; /* ეკრანის კიდეებს რომ არ მიეკროს */
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* ==========================================================
+   2. ჰედერი და ნავიგაცია
+   ========================================================== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navigation a {
+        padding: 6px 15px; /* ვამცირებ დაცილებებს */
+        font-size: 13px;
+    }
+}
+
+/* ==========================================================
+   3. პირველი სექცია მთავარი სურათი
+   ========================================================== */
+@media (max-width: 768px) {
+    .fashion-image {
+        width: 100% !important;
+        height: 400px;
+        transform: scale(1); /* ვაუქმებ დესკტოპის 1.05 გადიდებას */
+    }
+
+    .sectionone {
+        margin-top: 50px;
+    }
+
+    .ventusfashion {
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .ventusfashion h1 {
+        font-size: 30px;
+    }
+
+    .ventusfashion p {
+        font-size: 16px;
+    }
+}
+
+/* ==========================================================
+   4. TOPICS სექცია
+   ========================================================== */
+@media (max-width: 1000px) {
+    .topics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /*  ამ ზომაზე დალაგდეს 2 სვეტად */
+        gap: 20px;
+    }
+
+    .topic-card {
+        width: 100%; /* იკავებს გრიდის სვეტს */
+    }
+}
+
+@media (max-width: 480px) {
+    .topics-grid {
+        grid-template-columns: 1fr; /* მობილურზე აჩვენოს თითო ბარათი */
+    }
+}
+
+/* ==========================================================
+   5. Featured Post
+   ========================================================== */
+@media (max-width: 768px) {
+    .blog-card-content {
+        padding: 30px 20px;
+    }
+
+    .blog-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .blog-title {
+        font-size: 22px;
+    }
+
+    .blog-tag {
+        padding: 8px 30px; /* პატარავდება შავი ღილაკი */
+        left: 20px;
+        top: 20px;
+    }
+}
+
+/* ==========================================================
+   6. TRENDING სექცია
+   ========================================================== */
+@media (max-width: 1200px) {
+    .card-grid {
+        grid-template-columns: 1fr; /* 1 სვეტი */
+        justify-items: center;
+    }
+
+    .block-cards {
+        width: 100% !important;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .card-image {
+        height: 300px;
+    }
+}
+
+/* ==========================================================
+   7. ჰორიზონტალრი ბლოგები "სამი კარტა"
+   ========================================================== */
+@media (max-width: 900px) {
+    .blogs-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .blogs-image, .blogs-content {
+        width: 100%;
+    }
+
+    .blogs-image {
+        height: 250px;
+    }
+
+    .blogs-content h2 {
+        font-size: 22px;
+    }
+}
+
+/* ==========================================================
+   8. Footer
+   ========================================================= */
+@media (max-width: 768px) {
+    footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .footer-logoo {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social p {
+        font-size: 20px;
+    }
+}
