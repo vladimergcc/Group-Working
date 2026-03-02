@@ -768,21 +768,24 @@ body{
    2. ჰედერი და ნავიგაცია
    ========================================================== */
 @media (max-width: 768px) {
-    .header {
+     .header {
         flex-direction: column;
-        padding: 20px 0;
+        align-items: center;
         gap: 20px;
+        padding: 20px 0;
     }
 
+
+   
     .navigation {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+    flex-direction: column;   
+    align-items: center;
+    gap: 15px;
     }
 
     .navigation a {
-        padding: 6px 15px; /* ვამცირებ დაცილებებს */
-        font-size: 13px;
+        padding: 10px 24px;
+        font-size: 14px;
     }
 }
 
@@ -926,4 +929,103 @@ body{
     .footer-social p {
         font-size: 20px;
     }
+}
+
+
+
+
+
+@media (max-width: 1068px) {
+
+    /* საერთო კონტეინერები */
+    .container,
+    .header,
+    .topics-section,
+    .featured-post,
+    .trending-section,
+    .footer {
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    /* ჰეფერისთვის */
+    .header {
+        padding: 24px;
+    }
+
+    .navigation a {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+    /* ჩემი ბეგრაუნდის რესფონსივია 1068 */
+    .intro {
+        padding: 0;
+    }
+
+    .intro-text {
+        padding: 160px 40px 100px;
+    }
+
+    .intro-text h1 {
+        font-size: 38px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+
+    /* ნინოს ქარდების რესფონსივი 1068 */
+    .topics-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .topic-card {
+        width: 100%;
+    }
+
+    /* წერეთლის ბლოკის 1068 */
+    .blog-card {
+        max-width: 100%;
+    }
+
+    .blog-card-content {
+        padding: 40px;
+    }
+
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .block-cards {
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+    }
+
+    .card-image {
+        height: 320px;
+    }
+
+    /* ჩემი ვერიკალური ქარდები რესფონსივი 1068 */
+    .blogs-card {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .blogs-content h2 {
+        font-size: 24px;
+    }
+
+    /* ფუთერის */
+    .footer-logoo {
+        gap: 40px;
+    }
+
 }
